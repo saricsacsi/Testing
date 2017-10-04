@@ -1,8 +1,7 @@
 pragma solidity ^0.4.11;
 
 
-import './StandardToken.sol';
-
+import "./StandardToken.sol";
 
 
 /**
@@ -11,7 +10,7 @@ import './StandardToken.sol';
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract VickyToken is StandardToken, {
+contract VickyToken is StandardToken {
 
   string public constant name = "VickyToken";
   string public constant symbol = "VIC";
