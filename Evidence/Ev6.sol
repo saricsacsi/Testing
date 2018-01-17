@@ -100,9 +100,9 @@ contract evidenceContract is Ownable{
     require (user_address != 0x0 || user_address != myAddress);
     require (timelimit > now);
     
-    members[user_address].userrecord.md5sum = md5sum;
-    members[user_address].userrecord._hash = _hash;
-    members[user_address].userrecord.timelimit = timelimit;
+    members[user_address].userrecord[].md5sum = md5sum;
+    members[user_address].userrecord[]._hash = _hash;
+    members[user_address].userrecord[].timelimit = timelimit;
     isMember[user_address] = true;  
     numberOfRecord++;
     Newuser(numberOfRecord,user_address,timelimit);    
